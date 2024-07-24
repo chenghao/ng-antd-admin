@@ -19,6 +19,7 @@ export interface PageHeaderType {
   selector: 'app-page-header',
   templateUrl: './page-header.component.html',
   styleUrls: ['./page-header.component.less'],
+  styles: ['.site-page-header { display: none; }'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [NzPageHeaderModule, NzBreadCrumbModule, NzOutletModule]
