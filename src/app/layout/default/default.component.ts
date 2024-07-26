@@ -80,6 +80,7 @@ export class DefaultComponent implements OnInit, AfterViewInit {
   isCollapsed$: Observable<boolean> = this.themesService.getIsCollapsed();
   mixinModeLeftNav$ = this.splitNavStoreService.getSplitLeftNavArrayStore();
 
+  showRightSetting = false; // 是否显示右侧设置按钮
   showChats = false; // 是否显示聊天窗口
   isMixinMode = false; // 是否是混合模式
   isNightTheme = false; // 是否是暗色主题

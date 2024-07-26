@@ -120,7 +120,9 @@
   </nz-layout>
 </nz-layout>
 
-<app-setting-drawer />
+@if (showRightSetting) {
+  <app-setting-drawer />
+}
 
 @if (showChats) {
   <app-chat (changeShows)="showChats = false" />
