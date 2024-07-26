@@ -15,7 +15,8 @@ export class WaterMarkComponent implements AfterViewInit {
   private waterMarkService = inject(WaterMarkService);
 
   ngAfterViewInit(): void {
-    const watermarkImg = this.waterMarkService.getWatermark();
-    this.watermark.nativeElement.style.backgroundImage = `url(${watermarkImg})`;
+    // 取消水印功能
+    //const watermarkImg = this.waterMarkService.getWatermark();
+    //this.watermark.nativeElement.style.backgroundImage = `url(${watermarkImg})`;
   }
 }
