@@ -98,13 +98,13 @@ export class SettingDrawerComponent implements OnInit {
       key: 'dark',
       image: 'imgs/theme-dark.svg',
       title: '暗色菜单风格',
-      isChecked: true
+      isChecked: false
     },
     {
       key: 'light',
       image: 'imgs/theme-light.svg',
       title: '亮色菜单风格',
-      isChecked: false
+      isChecked: true
     }
   ];
   colors: Color[] = [

@@ -90,6 +90,7 @@ export class DriverService {
       steps
     });
 
-    driverObj.drive();
+    // 取消主页引导功能
+    // driverObj.drive();
   }
 }

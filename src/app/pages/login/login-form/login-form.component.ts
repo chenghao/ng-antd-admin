@@ -71,7 +71,8 @@ export class LoginFormComponent implements OnInit {
           })
           .finally(() => {
             this.spinService.setCurrentGlobalSpinStore(false);
-            this.notification.blank(
+            // 登录成功后取消主页上的温馨提示
+            /*this.notification.blank(
               '温馨提示',
               `
                 源码地址：<a href="https://github.com/huajian123/ng-antd-admin">在这里</a>
@@ -80,7 +81,7 @@ export class LoginFormComponent implements OnInit {
                 nzPlacement: 'top',
                 nzDuration: 0
               }
-            );
+            );*/
           });
       });
   }

@@ -35,7 +35,7 @@ export class ThemeService {
   private isCompactTheme$ = new BehaviorSubject<boolean>(false); // 紧凑主题
   private isOverModeTheme$ = new BehaviorSubject<boolean>(false); // over模式，即拖动浏览器宽度，至菜单栏消失的状态
   private themesMode$ = new BehaviorSubject<SettingInterface>({
-    theme: 'dark',
+    theme: 'light',
     color: '#1890FF',
     mode: 'side',
     isShowTab: true,
@@ -46,7 +46,7 @@ export class ThemeService {
     fixedHead: true,
     fixedLeftNav: true,
     hasTopArea: true,
-    hasFooterArea: true,
+    hasFooterArea: false,
     hasNavArea: true,
     hasNavHeadArea: true
   });
